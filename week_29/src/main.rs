@@ -1,11 +1,12 @@
-use std::ops::Mul;
+#[derive(Copy,Clone)]
 
 struct Rect<T>{ // struct to generics 
     width : T,
     height : T
 } 
 
-impl<T> Rect<T> where T: Mul<Output =T> +Copy, {
+
+impl <T: std::ops::Mul<Output=T>+Copy> Rect<T>{
     fn area(&self) -> T{
         return self.width * self.height;
     }
@@ -21,7 +22,11 @@ fn main(){
     print!("area is:{}",r.area());
 }
 
-
+// impl<T> Rect<T> where T: Mul<Output =T> +Copy, {
+//     fn area(&self) -> T{
+//         return self.width * self.height;
+//     }
+// }
 
 
 // fn display_element<T: std::fmt::Display>(a:T,b:T){
