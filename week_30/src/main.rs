@@ -1,3 +1,10 @@
+macro_rules! say_hello{
+    ()=>{
+        println!("zzzzzz");
+    }
+}
 fn main() {
-    println!("Hello, world!");
+    let v = vec!(1,2,); //declarative macro 
+    println!("{:?}",v);
+    say_hello!();
 }
