@@ -19,7 +19,7 @@ fn main(){
         width:10,
         height:20
     };
-    print!("area is:{}",r.area());
+    println!("area is:{}",r.area());
 }
 
 // impl<T> Rect<T> where T: Mul<Output =T> +Copy, {
