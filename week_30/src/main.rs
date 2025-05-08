@@ -2,7 +2,7 @@
 
 use serde::{Serialize,Deserialize};
 
-#[derive(Serialize,Deserialize)]
+#[derive(Serialize,Deserialize,Debug,Clone)]
 
 // macro_rules! say_hello{
 //     ()=>{
@@ -33,6 +33,13 @@ fn main() {
     match serialized_user{
         Ok(str)=>print!("{}",str),
         Err(_)=>print!("Error!!!!")
+    }
+    let s = String::from("{\"username\": \"user@\", \"name\": \"userOne\"}");
+    let ans: Result<User, serde_json::Error> = serde_json::from_str(&s);
+
+    match ans {
+        Ok(user) => println!("{:?}", user),
+        Err(e) => println!("Error parsing JSON: {:?}", e),
     }
     // println!("{:?}",u);
     // let v = vec!(1,2,); //declarative macro 
