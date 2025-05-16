@@ -22,9 +22,26 @@ struct User{
 // }
 //instead of making this Debug treait for User we used the Debug macro above the USer Trait !!!! 
 
+macro_rules! generate_functions {
+    ($($func_name:ident),*) => {
+        $(
+            fn $func_name() {
+                println!("Hello from {}", stringify!($func_name));
+            }
+        )*
+    };
+}
+
+generate_functions!(foo, bar, baz);
+
+
 
 fn main() {
+    foo();  
+    bar();  
+    baz();  
     let u = User{
+        
         username:String::from("zzzz"),
         name:String::from("aaa")
         // password:2
