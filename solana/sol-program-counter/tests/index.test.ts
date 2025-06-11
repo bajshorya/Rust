@@ -67,7 +67,9 @@ test(
       dataAccount.publicKey
     );
     const counter = borsh.deserialize(schema, dataAccountInfo?.data);
-    console.log(counter.count);
+    // @ts-ignore
+    console.log(counter.count); //typescript error
+    // @ts-ignore
     expect(counter.count).toBe(0);
   },
   { timeout: 60000 }
