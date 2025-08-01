@@ -1,0 +1,11 @@
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/deps/libfive8-74403611e671580f.rmeta: /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/decode.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/encode.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/unlikely.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/../README.md
+
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/deps/libfive8-74403611e671580f.rlib: /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/decode.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/encode.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/unlikely.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/../README.md
+
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/deps/five8-74403611e671580f.d: /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/decode.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/encode.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/unlikely.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/../README.md
+
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/lib.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/decode.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/encode.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/unlikely.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/five8-0.2.1/src/../README.md:

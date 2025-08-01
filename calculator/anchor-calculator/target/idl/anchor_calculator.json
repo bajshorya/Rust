@@ -1,0 +1,152 @@
+{
+  "address": "AYkipetpaY5p637YMQZZXB6668uvWF6RNQyvnixNb3W2",
+  "metadata": {
+    "name": "anchor_calculator",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "add",
+      "discriminator": [
+        41,
+        249,
+        249,
+        146,
+        197,
+        111,
+        56,
+        181
+      ],
+      "accounts": [
+        {
+          "name": "account",
+          "writable": true
+        },
+        {
+          "name": "signer",
+          "signer": true
+        }
+      ],
+      "args": [
+        {
+          "name": "num",
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "double",
+      "discriminator": [
+        162,
+        214,
+        74,
+        72,
+        133,
+        109,
+        203,
+        102
+      ],
+      "accounts": [
+        {
+          "name": "account",
+          "writable": true
+        },
+        {
+          "name": "signer",
+          "signer": true
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "half",
+      "discriminator": [
+        76,
+        180,
+        225,
+        131,
+        93,
+        32,
+        187,
+        25
+      ],
+      "accounts": [
+        {
+          "name": "account",
+          "writable": true
+        },
+        {
+          "name": "signer",
+          "signer": true
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "init",
+      "discriminator": [
+        220,
+        59,
+        207,
+        236,
+        108,
+        250,
+        47,
+        100
+      ],
+      "accounts": [
+        {
+          "name": "account",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        }
+      ],
+      "args": [
+        {
+          "name": "init_val",
+          "type": "u32"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "DataShape",
+      "discriminator": [
+        53,
+        175,
+        45,
+        58,
+        248,
+        207,
+        235,
+        106
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "DataShape",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "num",
+            "type": "u32"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/deps/libthiserror-92321239bb355fb5.rmeta: /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/aserror.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/display.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/provide.rs
+
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/deps/libthiserror-92321239bb355fb5.rlib: /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/aserror.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/display.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/provide.rs
+
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/deps/thiserror-92321239bb355fb5.d: /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/aserror.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/display.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/provide.rs
+
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/lib.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/aserror.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/display.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/provide.rs:

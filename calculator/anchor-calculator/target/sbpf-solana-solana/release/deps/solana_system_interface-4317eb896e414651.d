@@ -1,0 +1,9 @@
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/deps/libsolana_system_interface-4317eb896e414651.rmeta: /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/error.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/instruction.rs
+
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/deps/libsolana_system_interface-4317eb896e414651.rlib: /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/error.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/instruction.rs
+
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/deps/solana_system_interface-4317eb896e414651.d: /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/error.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/instruction.rs
+
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/lib.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/error.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/instruction.rs:

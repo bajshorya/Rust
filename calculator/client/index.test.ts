@@ -11,9 +11,12 @@ import {
 import * as path from "path";
 describe("Counter Calculator Program Tests", () => {
   let svm: LiteSVM;
-  let programId: PublicKey;
-  let dataAccount: Keypair;
-  let userAccount: Keypair;
+  let programId: PublicKey; // PublicKey for the calculator program
+  // This should be the actual program ID of your deployed calculator program
+  let dataAccount: Keypair; // Keypair for the data account
+  // This account will hold the state of the calculator
+  let userAccount: Keypair; // Keypair for the user account
+  // This account will be used to send transactions and pay fees
 
   const programPath = path.join(import.meta.dir, "calculator.so");
   beforeAll(() => {
@@ -76,7 +79,7 @@ describe("Counter Calculator Program Tests", () => {
           isWritable: true, // Writable because we will write to it
         },
       ],
-      data: Buffer.from([1]), // 0 for init operation
+      data: Buffer.from([1]), // 0 for double operation
     });
     const transaction = new Transaction().add(instruction); // Create a new transaction with the instruction
     transaction.recentBlockhash = svm.latestBlockhash(); // Get the latest blockhash
@@ -88,12 +91,10 @@ describe("Counter Calculator Program Tests", () => {
     if (!updatedAccountData) {
       throw new Error("Data account not found after initialization");
     }
-    expect(updatedAccountData.data[0]).toBe(2); // Check if the first byte is 1, indicating initialization
+    expect(updatedAccountData.data[0]).toBe(2); // Check if the first byte is 2, indicating double of 1
     expect(updatedAccountData.data[1]).toBe(0);
     expect(updatedAccountData.data[2]).toBe(0);
     expect(updatedAccountData.data[3]).toBe(0);
-    // Check if the account is initialized correctly i.e the first byte is 1 and the remaining bytes are 0
-    // so the number initialized is 1
   });
   test("half", () => {
     const instruction = new TransactionInstruction({
@@ -105,7 +106,7 @@ describe("Counter Calculator Program Tests", () => {
           isWritable: true, // Writable because we will write to it
         },
       ],
-      data: Buffer.from([2]), // 0 for init operation
+      data: Buffer.from([2]), // 2 for half operation
     });
     const transaction = new Transaction().add(instruction); // Create a new transaction with the instruction
     transaction.recentBlockhash = svm.latestBlockhash(); // Get the latest blockhash
@@ -117,12 +118,10 @@ describe("Counter Calculator Program Tests", () => {
     if (!updatedAccountData) {
       throw new Error("Data account not found after initialization");
     }
-    expect(updatedAccountData.data[0]).toBe(1); // Check if the first byte is 1, indicating initialization
+    expect(updatedAccountData.data[0]).toBe(1); // Check if the first byte is 1, indicating half of 2
     expect(updatedAccountData.data[1]).toBe(0);
     expect(updatedAccountData.data[2]).toBe(0);
     expect(updatedAccountData.data[3]).toBe(0);
-    // Check if the account is initialized correctly i.e the first byte is 1 and the remaining bytes are 0
-    // so the number initialized is 1
   });
   test("Add", () => {
     const instruction = new TransactionInstruction({
@@ -134,7 +133,7 @@ describe("Counter Calculator Program Tests", () => {
           isWritable: true, // Writable because we will write to it
         },
       ],
-      data: Buffer.from([3,5,0,0,0]), // 0 for init operation
+      data: Buffer.from([3, 5, 0, 0, 0]), // 3 for add operation, and 5 as 4-byte little-endian u32 which is 5
     });
     const transaction = new Transaction().add(instruction); // Create a new transaction with the instruction
     transaction.recentBlockhash = svm.latestBlockhash(); // Get the latest blockhash
@@ -146,17 +145,14 @@ describe("Counter Calculator Program Tests", () => {
     if (!updatedAccountData) {
       throw new Error("Data account not found after initialization");
     }
-    expect(updatedAccountData.data[0]).toBe(6); // Check if the first byte is 1, indicating initialization
+    expect(updatedAccountData.data[0]).toBe(6); // Check if the first byte is 6, indicating 1 + 5
     expect(updatedAccountData.data[1]).toBe(0);
     expect(updatedAccountData.data[2]).toBe(0);
     expect(updatedAccountData.data[3]).toBe(0);
-    // Check if the account is initialized correctly i.e the first byte is 1 and the remaining bytes are 0
-    // so the number initialized is 1
   });
   test("subtract", () => {
-    // Now, let's subtract 2 (from 6, should become 4)
     const instruction = new TransactionInstruction({
-      programId,
+      programId, // Program ID of the calculator program
       keys: [
         {
           pubkey: dataAccount.publicKey,
@@ -164,8 +160,7 @@ describe("Counter Calculator Program Tests", () => {
           isWritable: true,
         },
       ],
-      // Tag 4 for Subtract, then 2 as 4-byte little-endian u32
-      data: Buffer.from([4, 2, 0, 0, 0]),
+      data: Buffer.from([4, 2, 0, 0, 0]), // 4 for subtract operation, and 2 as 4-byte little-endian u32 which is 2
     });
     const transaction = new Transaction().add(instruction);
     transaction.recentBlockhash = svm.latestBlockhash();
@@ -177,8 +172,7 @@ describe("Counter Calculator Program Tests", () => {
     if (!updatedAccountData) {
       throw new Error("Data account not found after subtract");
     }
-    // Previous value was 6. Subtract 2 ⇒ 4.
-    expect(updatedAccountData.data[0]).toBe(4);
+    expect(updatedAccountData.data[0]).toBe(4); // Check if the first byte is 4, indicating 6 - 2
     expect(updatedAccountData.data[1]).toBe(0);
     expect(updatedAccountData.data[2]).toBe(0);
     expect(updatedAccountData.data[3]).toBe(0);

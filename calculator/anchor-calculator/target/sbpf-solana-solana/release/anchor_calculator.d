@@ -1,0 +1,1 @@
+/Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/target/sbpf-solana-solana/release/anchor_calculator.so: /Users/shoryabaj/Desktop/Rust-web3/rust/calculator/anchor-calculator/programs/anchor-calculator/src/lib.rs
